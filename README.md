@@ -1,5 +1,8 @@
 # Kumulatif Toplam (Running Sum) Algoritması
 
+![Uploading Kümülatif Toplam Animasyon  kopyası.gif…]()
+
+
 ## Açıklama
 Bu algoritma, bir dizinin koşan toplamını (running sum) hesaplar. Her eleman, kendisinden önceki tüm elemanların toplamı ile güncellenir.
 
