@@ -15,19 +15,6 @@ Bu algoritma, bir dizinin koşan toplamını (running sum) hesaplar. Her eleman,
 **Açıklama:**  
 Koşan toplam şu şekilde elde edilir: `[1, 1+2, 1+2+3, 1+2+3+4]`.
 
-### Örnek 2:
-**Girdi:**  
-`nums = [1,1,1,1,1]`  
-**Çıktı:**  
-`[1,2,3,4,5]`  
-**Açıklama:**  
-Koşan toplam şu şekilde elde edilir: `[1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1]`.
-
-### Örnek 3:
-**Girdi:**  
-`nums = [3,1,2,10,1]`  
-**Çıktı:**  
-`[3,4,6,16,17]`
 
 ## Python Çözümü
 
@@ -40,4 +27,53 @@ class Solution(object):
         for num in nums:
             total += num
             result.append(total)
+        return result 
+
+``` 
+
+# Running Sum Algorithm
+
+## Description
+This algorithm calculates the **running sum** (also known as **cumulative sum**) of an array. Each element is updated with the sum of itself and all previous elements.
+
+## Examples
+
+### Example 1:
+**Input:**  
+`nums = [1,2,3,4]`  
+**Output:**  
+`[1,3,6,10]`  
+**Explanation:**  
+The running sum is obtained as follows:  
+`[1, 1+2, 1+2+3, 1+2+3+4]`.
+
+### Example 2:
+**Input:**  
+`nums = [1,1,1,1,1]`  
+**Output:**  
+`[1,2,3,4,5]`  
+**Explanation:**  
+The running sum is obtained as follows:  
+`[1, 1+1, 1+1+1, 1+1+1+1, 1+1+1+1+1]`.
+
+### Example 3:
+**Input:**  
+`nums = [3,1,2,10,1]`  
+**Output:**  
+`[3,4,6,16,17]`
+
+## Python Solution
+
+```python
+class Solution(object):
+    def runningSum(self, nums):
+        total = 0
+        result = []
+
+        for num in nums:
+            total += num
+            result.append(total)
         return result
+
+
+
