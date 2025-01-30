@@ -1,0 +1,1 @@
+# Kumulatif-Toplam
