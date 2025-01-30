@@ -1,6 +1,4 @@
-# Kumulatif-Toplam
-
-# Koşan Toplam (Running Sum) Algoritması
+# Kumulatif Toplam (Running Sum) Algoritması
 
 ## Açıklama
 Bu algoritma, bir dizinin koşan toplamını (running sum) hesaplar. Her eleman, kendisinden önceki tüm elemanların toplamı ile güncellenir.
